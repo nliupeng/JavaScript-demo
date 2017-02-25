@@ -2,16 +2,29 @@
 <html ng-app="app">
 <head>
     <title>Rock, Paper, Scissors</title>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
  
 <body>
 
-	<a ng-href="#/">game</a>
-	<a ng-href="#/start">start</a>
+	<!--Navigation bar-->
+	<nav class="navbar navbar-default">
+  		<div class="container-fluid">
+    		<ul class="nav navbar-nav">
+      			<li><a href="#/">Start</a></li>
+      			<li><a href="#/game">Game</a></li>
+    		</ul>
+  		</div>
+	</nav>
 
-
-	<div ng-view>
-	<!--AngularJS views will be displayed here-->
+	<!--Content-->
+	<div class=" container-fluid">
+		<div ng-view>
+			<!--AngularJS views will be displayed here-->
+		</div>
 	</div>
 
 	<footer>This is the footer</footer>
@@ -22,6 +35,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/startController.js"></script>
 	<script src="js/gameController.js"></script>
  
 </body>

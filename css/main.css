@@ -1,0 +1,15 @@
+/* main.css */
+
+#player1 {
+	background-color: #9bf; /*blue*/
+	text-align: center;
+}
+
+#player2 {
+	background-color: #f99; /*red*/
+	text-align: center;
+}
+
+.container {
+	border: 2px solid gray;
+}

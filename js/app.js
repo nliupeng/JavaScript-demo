@@ -8,12 +8,13 @@
     app.config(function ($routeProvider) {
         $routeProvider
         .when('/', {
+            templateUrl: "views/start.html",
+            controller: "startController"          
+        })
+        .when('/game', {
             templateUrl: "views/game.html",
             controller: "gameController"
-        })
-        .when('/start', {
-            templateUrl: "views/start.html"          
-        })
+        })        
         .otherwise({ redirectTo: '/' });
     });
 })();

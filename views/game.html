@@ -1,3 +1,23 @@
-<h1>THIS IS THE GAME VIEW </h1>
-{{myMsg}}
-<button ng-click="myFunction()">Click me</button>
+<!-- game.html -->
+
+<div class="container">
+	<div ng-show="showMessage" class="alert alert-info">
+		{{message}}
+	</div>
+	<div class="row">
+		<div id="player1" class="col-md-offset-1 col-md-5">
+			<h2>You</h2>
+			<table>
+				<tr>
+					<td ng-repeat="o in options">
+						<img ng-click="selectOption(o.key)" width="100px" height="100px" ng-src="{{o.value}}">
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="player2" class="col-md-5">
+			<h2>Opponent</h2>
+			<img width="100px" height="100px" ng-src="{{user2icon}}">
+		</div>
+	</div>
+</div>
