@@ -4,20 +4,35 @@
 	<div ng-show="showMessage" class="alert alert-info">
 		{{message}}
 	</div>
+
 	<div class="row">
 		<div id="player1" class="col-md-offset-1 col-md-5">
 			<h2>You</h2>
 			<table>
 				<tr>
-					<td ng-repeat="o in options">
-						<img ng-click="selectOption(o.key)" width="100px" height="100px" ng-src="{{o.value}}">
+					<td class="option" ng-repeat="o in options">
+						<img ng-click="calculateResult(o.key)" width="100px" height="100px" ng-src="{{o.value}}">
 					</td>
 				</tr>
 			</table>
 		</div>
 		<div id="player2" class="col-md-5">
 			<h2>Opponent</h2>
-			<img width="100px" height="100px" ng-src="{{user2icon}}">
+			<img width="100px" height="100px" ng-src="{{compIcon}}">
 		</div>
 	</div>
+
+	<div class="row">
+		<div id="statusMessage" ng-bind="resultMessage"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-offset-3 col-md-3">
+			User score: 
+		</div>
+		<div class="col-md-3">
+			Computer score: 
+		</div>
+	</div>
+
 </div>
