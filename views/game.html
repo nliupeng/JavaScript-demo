@@ -1,12 +1,9 @@
 <!-- game.html -->
 
 <div class="container">
-	<div ng-show="showMessage" class="alert alert-info">
-		{{message}}
-	</div>
-
+	<!--Display game-->
 	<div class="row">
-		<div id="player1" class="col-md-offset-1 col-md-5">
+		<div id="player1" class="col-md-6">
 			<h2>You</h2>
 			<table>
 				<tr>
@@ -16,23 +13,29 @@
 				</tr>
 			</table>
 		</div>
-		<div id="player2" class="col-md-5">
+		<div id="player2" class="col-md-6">
 			<h2>Opponent</h2>
 			<img width="100px" height="100px" ng-src="{{compIcon}}">
 		</div>
 	</div>
 
+	<!--Display status message-->
 	<div class="row">
-		<div id="statusMessage" ng-bind="resultMessage"></div>
+		<div id="statusMessage" class="alert alert-info" ng-bind="resultMessage"></div>
+	</div>
+
+	<!--Display scores-->
+	<div class="row">
+		<div class="col-md-offset-3 col-md-3">
+			User score: {{userScore}}
+		</div>
+		<div class="col-md-3">
+			Computer score: {{compScore}}
+		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-md-offset-3 col-md-3">
-			User score: 
-		</div>
-		<div class="col-md-3">
-			Computer score: 
-		</div>
+		<button type="button" ng-click="reset()" class="btn btn-primary btn-sm">Reset</button>
 	</div>
 
 </div>
