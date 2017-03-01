@@ -1,6 +1,7 @@
 <!-- game.html -->
 
 <div class="container">
+<<<<<<< HEAD
 	<div ng-show="showMessage" class="alert alert-info">
 		{{message}}
 	</div>
@@ -11,13 +12,51 @@
 				<tr>
 					<td ng-repeat="o in options">
 						<img ng-click="selectOption(o.key)" width="100px" height="100px" ng-src="{{o.value}}">
+=======
+	<!--Display game-->
+	<div class="row">
+		<div id="player1" class="col-md-6">
+			<h2>You</h2>
+			<table>
+				<tr>
+					<td class="option" ng-repeat="o in options">
+						<img ng-click="calculateResult(o.key)" width="100px" height="100px" ng-src="{{o.value}}">
+>>>>>>> 3ded33762198027fe1631a3d77dabd3baae6485c
 					</td>
 				</tr>
 			</table>
 		</div>
+<<<<<<< HEAD
 		<div id="player2" class="col-md-5">
 			<h2>Opponent</h2>
 			<img width="100px" height="100px" ng-src="{{user2icon}}">
 		</div>
 	</div>
+=======
+		<div id="player2" class="col-md-6">
+			<h2>Opponent</h2>
+			<img width="100px" height="100px" ng-src="{{compIcon}}">
+		</div>
+	</div>
+
+	<!--Display status message-->
+	<div class="row">
+		<div id="statusMessage" class="alert alert-info" ng-bind="resultMessage"></div>
+	</div>
+
+	<!--Display scores-->
+	<div class="row">
+		<div class="col-md-offset-3 col-md-3">
+			User score: {{userScore}}
+		</div>
+		<div class="col-md-3">
+			Computer score: {{compScore}}
+		</div>
+	</div>
+
+	<div class="row">
+		<button type="button" ng-click="reset()" class="btn btn-primary btn-sm">Reset</button>
+	</div>
+
+>>>>>>> 3ded33762198027fe1631a3d77dabd3baae6485c
 </div>

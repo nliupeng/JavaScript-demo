@@ -12,4 +12,15 @@
 
 .container {
 	border: 2px solid gray;
+<<<<<<< HEAD
+=======
+}
+
+.option {
+	cursor: pointer;
+}
+
+#statusMessage {
+	text-align: center;
+>>>>>>> 3ded33762198027fe1631a3d77dabd3baae6485c
 }
