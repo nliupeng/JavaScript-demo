@@ -12,7 +12,6 @@
         $scope.message = "";
         $scope.showMessage = false;
 
-        
         // user2 is comp
     	$scope.user2icon = "img/user2icon.png";
         $scope.options = [ {key: "rock", value: "img/rock.png"}, {key: "paper", value: "img/paper.png"}, {key: "scissors", value: "img/scissors.png"}];
@@ -31,14 +30,12 @@
                     $scope.message = "paper clicked!";
                     $scope.generateCompChoice()
                     $scope.playAudio(key, 1);
-
                     break;
                 case "scissors":
                     $scope.showMessage = true;
                     $scope.generateCompChoice();
                     $scope.message = "scissors clicked!";
                     $scope.playAudio(key, 2);
-
                     break;
                 case "default":
             }
@@ -48,30 +45,25 @@
         $scope.generateCompChoice = function(){
     	    // random number from 1-3.
     	    var num = Math.floor(Math.random()*3 + 1);
+    	    console.log(num);
     	    switch (num) {
                 case 1:
-                    // same as $scope.user2icon = "img/rock.png";
-
-                    $scope.user2icon = $scope.options[0].value;
+                    $scope.user2icon = "img/rock.png";
                     break;
                 case 2:
-                    $scope.user2icon = $scope.options[1].value;
+                    $scope.user2icon = "img/paper.png";
                     break;
                 case 3:
-                    $scope.user2icon = $scope.options[2].value;
+                    $scope.user2icon = "img/scissors.png";
                     break
             }
         }
-        //////////////// End function ////////////////
 
-        //audio confirmation
+        // audio
         $scope.playAudio = function(key, i){
             var audio = new Audio('audio/sfx' +$scope.options[i].key + '.mp3');
             audio.play();
         }
-        
+
     }
-    
-
-
 })();

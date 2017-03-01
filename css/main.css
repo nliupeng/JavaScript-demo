@@ -13,3 +13,11 @@
 .container {
 	border: 2px solid gray;
 }
+
+.option {
+	cursor: pointer;
+}
+
+#statusMessage {
+	text-align: center;
+}
