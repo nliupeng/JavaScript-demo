@@ -1,5 +1,14 @@
 /* main.css */
 
+body {
+	font-family: 'Baloo', cursive;
+	font-size: 20px;
+}
+
+.center {
+	text-align: center;
+}
+
 #player1 {
 	background-color: #9bf; /*blue*/
 	text-align: center;
@@ -12,15 +21,32 @@
 
 .container {
 	border: 2px solid gray;
-<<<<<<< HEAD
-=======
+	padding: 20px;
 }
 
 .option {
 	cursor: pointer;
+	padding: 0 10px;
 }
 
 #statusMessage {
 	text-align: center;
->>>>>>> 3ded33762198027fe1631a3d77dabd3baae6485c
+	font-size: 2em;
 }
+
+
+
+/* game.html ================================== */
+#gameTitle {
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+
+.user {
+	height: 200px;
+}
+
+.optionsContainer {
+	margin: auto;
+}
+
