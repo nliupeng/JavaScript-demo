@@ -21,7 +21,7 @@
 
         /* Calculate winner of round */
         $scope.calculateResult = function(userChoice) {
-            $scope.playAudio(userChoice);
+            playAudio(userChoice);
 
             var compChoice = generateCompChoice();
 
@@ -92,10 +92,11 @@
             $scope.resultMessage = "READY?";
             $scope.userScore = 0;
             $scope.compScore = 0;
+            playAudio('toggle');
         }
 
         /* Audio function */
-        $scope.playAudio = function(i) {
+        var playAudio = function(i) {
             var audio = new Audio('audio/sfx' + i + '.mp3');
             audio.play();
         }
