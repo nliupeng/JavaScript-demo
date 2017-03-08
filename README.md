@@ -1,7 +1,7 @@
 # JavaScript: Simple rock-paper-scissors game
 CS408: Programming Languages
 
-Karl Santino Leano
-Nelly Liu Peng
-Nahid Enayatzadeh
+Karl Santino Leano <br>
+Nelly Liu Peng <br>
+Nahid Enayatzadeh <br>
 Rita Haddad
