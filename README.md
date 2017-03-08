@@ -2,6 +2,6 @@
 CS408: Programming Languages
 
 Karl Santino Leano <br>
-Nelly Liu Peng <br>
 Nahid Enayatzadeh <br>
+Nelly Liu Peng <br>
 Rita Haddad
